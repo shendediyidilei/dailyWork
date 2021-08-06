@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 import importlib
 import sys
-
+###############
 # print (u'系统默认编码为',sys.getdefaultencoding())
 default_encoding = 'utf-8'  # 重新设置编码方式为uft-8
 if sys.getdefaultencoding() != default_encoding:
