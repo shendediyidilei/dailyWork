@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>柱状图示例</title>
+    <style>
+        .chart {
+            width: 300px;
+            height: 200px;
+            border: 1px solid #ccc;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-end;
+            padding: 10px;
+        }
+
+        .bar {
+            height: 80%;
+            width: 25%;
+            background-color: #23aaff;
+            margin: 0 10px;
+            opacity: 0.6;
+            transition: height 0.2s ease;
+        }
+
+        .bar:hover {
+            height: 90%;
+            opacity: 1;
+        }
+
+        .label {
+            font-size: 14px;
+            text-align: center;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chart">
+        <div class="bar" style="height: 50%;" data-value="50">
+            <div class="label">项目1</div>
+        </div>
+        <div class="bar" style="height: 70%;" data-value="70">
+            <div class="label">项目2</div>
+        </div>
+        <div class="bar" style="height: 90%;" data-value="90">
+            <div class="label">项目3</div>
+        </div>
+        <div class="bar" style="height: 60%;" data-value="60">
+            <div class="label">项目4</div>
+        </div>
+    </div>
+</body>
+</html>
